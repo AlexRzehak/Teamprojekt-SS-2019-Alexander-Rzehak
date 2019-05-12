@@ -1,7 +1,8 @@
+import sys
+
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtGui import QPainter, QColor, QBrush
-from PyQt5.QtCore import Qt
-import sys
 
 
 class Chess(QWidget):
@@ -64,7 +65,7 @@ class Chess(QWidget):
         # we set up above
         # to get all possible combinations, we need to paint two tiles
         # each time: one with the reversed coordinates for x and y
-        for (a, b) in vecZip:
+        for a, b in vecZip:
             qp.drawRect(a, b, tileSize, tileSize)
             qp.drawRect(b, a, tileSize, tileSize)
 

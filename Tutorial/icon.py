@@ -25,7 +25,7 @@ class Example(QWidget):
 
         self.setGeometry(300, 300, 300, 220)
         self.setWindowTitle('Icon')
-        self.setWindowIcon(QIcon('web.png'))
+        self.setWindowIcon(QIcon('chess.ico'))
 
         self.show()
 
